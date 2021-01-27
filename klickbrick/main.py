@@ -1,13 +1,15 @@
 from argparse import ArgumentParser
 
-def greeting():
+def get_args():
     parser = ArgumentParser()
     parser.add_argument("--name", type=str, help="optional name")
     args = parser.parse_args();
 
-    print('hi')
-    message = "placeholder"
+    return args
 
+
+def greeting():
+    args = get_args()
     if args.name is not None:
         message = f"Hello, {args.name}."
         return message

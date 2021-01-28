@@ -19,6 +19,4 @@ class TestKlickBrick(unittest.TestCase):
             noArg = klickbrick.greeting();
             self.assertEqual(noArg, 'Hello World.')
 
-### with name
-### with error
 

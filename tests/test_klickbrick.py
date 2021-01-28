@@ -1,5 +1,5 @@
-from klickbrick.__init__ import __version__
-import klickbrick.main as klickbrick
+from klickbrick_codeangler.__init__ import __version__
+import klickbrick_codeangler.main as klickbrick
 import unittest
 
 if __name__ == "__main__":

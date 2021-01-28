@@ -38,7 +38,3 @@ deploy:
   provider: script
   script: poetry publish
   skip_cleanup: true
-  on:
-    all_branches: true  # Travis recognizes tag names as "branches"
-    repo: codeangler/liveproject-cli-python
-    tags: true

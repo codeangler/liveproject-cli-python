@@ -20,7 +20,7 @@ jobs:
         - pip install poetry
         - poetry install -v
       script:
-        - pytest --cov
+        - poetry run pytest
     - stage: deploy
       script:
         - echo Deploying to PyPI...

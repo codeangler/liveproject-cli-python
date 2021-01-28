@@ -40,6 +40,5 @@ deploy:
   skip_cleanup: true
   on:
     all_branches: true  # Travis recognizes tag names as "branches"
-    condition: $TRAVIS_BUILD_STAGE_NAME = Deploy
     repo: codeangler/liveproject-cli-python
     tags: true

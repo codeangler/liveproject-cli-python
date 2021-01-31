@@ -36,5 +36,5 @@ before_deploy:
 
 deploy:
   provider: script
-  script: poetry publish
+  script: poetry publish -r testpypi
   skip_cleanup: true

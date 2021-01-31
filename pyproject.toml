@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "klickbrick-codeangler"
-version = "0.1.6"
+version = "0.1.7"
 description = ""
 authors = ["caseyburnett <casey.burnett@davita.com>"]
 homepage = "https://github.com/codeangler/liveproject-cli-python"

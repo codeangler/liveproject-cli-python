@@ -30,7 +30,7 @@ before_deploy:
   # the web interface in the project settings.
   - pip install --upgrade pip
   - pip install poetry
-  - poetry config repositories.testpypi https://test.pypi.org/legacy
+  - poetry config repositories.testpypi https://test.pypi.org/legacy/
   - poetry config http-basic.pypi $PYPI_USER $PYPI_PASS
   - poetry build
 
@@ -38,3 +38,8 @@ deploy:
   provider: script
   script: poetry publish -r testpypi
   skip_cleanup: true
+    on:
+      branch: master
+      python: '3.7'
+      tags: true
+  if: tag IS present
